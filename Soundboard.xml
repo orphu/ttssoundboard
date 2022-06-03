@@ -1,0 +1,43 @@
+<!-- Xml UI. See documentation: https://api.tabletopsimulator.com/ui/introUI/ -->
+
+<!--
+<Defaults>
+    <Button color="#DDDDDD" fontSize="8" />
+</Defaults>
+-->
+
+<Defaults>
+    <Button fontSize="69" textOutline="Black" fontStyle="Bold" textColor="#AAAAAA" colors="#000000|#444444|#888888|rgba(0.78,0.78,0.78,0.5)"/>
+    <Text fontSize="69" textOutline="Black" fontStyle="Bold" color="#AAAAAA" colors="#333333|#222222|#444444|rgba(0.78,0.78,0.78,0.5)"/>
+    <TableLayout cellPadding="0 0 0 0" rowBackgroundColor="clear" cellBackgroundColor="clear"/>
+</Defaults>
+
+
+<Panel id="UI" width="1600" height="600" position="-850 -250 45" padding="0 0 0 0">
+<TableLayout width="90" height="90">
+    <Row>
+        <Cell><Button onClick="loadMusic">Load+Play</Button></Cell>
+        <Cell><Button onClick="clearMusic">Clear Music</Button></Cell>
+        <Cell><Button onClick="lol">LOL</Button></Cell>
+        <Cell><Button onClick="trombone">Sad</Button></Cell>
+    </Row>
+    <Row>
+        <Cell><Button onClick="skipBack">&lt;&lt;</Button></Cell>
+        <Cell><Button onClick="pause">Play/Pause</Button></Cell>
+        <Cell><Button onClick="skipForward">&gt;&gt;</Button></Cell>
+    </Row>
+    <Row>
+        <Cell><Button onClick="nicehit">Nice hit!</Button></Cell>
+        <Cell><Button onClick="nicekill">Nice kill!</Button></Cell>
+        <Cell><Button onClick="wound">Wounded</Button></Cell>
+    </Row>
+    <Row>
+        <Cell><Button onClick="badhit">That hurt </Button></Cell>
+        <Cell><Button onClick="trap">Trap</Button></Cell>
+        <Cell><Button onClick="loot">Loot Chest</Button></Cell>
+    </Row>
+    <Row>
+        <Cell columnSpan="4"><Text id="title">---</Text></Cell>
+    </Row>
+</TableLayout>
+</Panel>
